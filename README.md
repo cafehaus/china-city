@@ -36,6 +36,26 @@ function fmtGbk(str) {
 }
 ```
 
+## 可能遇到的问题
+
+在 macOS 上运行有可能会有如下报错，根据提示运行这个命令就好了：npx playwright install
+
+```bash
+node:internal/process/promises:279
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+browserType.launch: Executable doesn't exist at /Users/cafehaus/Library/Caches/ms-playwright/chromium-956323/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+```
+
 ## 使用说明
 
 数据来源网上公开信息，仅供学习交流使用
