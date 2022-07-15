@@ -1,0 +1,27 @@
+{
+  "name": "china-city",
+  "version": "1.0.0",
+  "description": "nodejs 爬虫：用 playwright 爬取全国行政区域详细信息",
+  "author": "cafehaus",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "fmt": "node src/format.js"
+  },
+  "keywords": [
+    "playwright",
+    "postal code",
+    "zipcode",
+    "中国行政区划",
+    "中国城市",
+    "邮政编码",
+    "中国城市邮编"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.18.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
